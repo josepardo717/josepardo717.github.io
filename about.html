@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -30,20 +31,25 @@
         }
 
         .section {
-            width: 30%;
+            width: 30%; /* Cambiado a 30% para mantener 3 por fila */
+            padding-top: 30%; /* Añadido para hacerlo un cuadrado perfecto */
+            position: relative;
             margin-bottom: 40px;
             background-color: #f4f4f4;
-            padding: 40px;
             box-sizing: border-box;
             border: 1px solid #ccc;
             border-radius: 8px;
             text-align: center;
+            overflow: hidden;
         }
 
         .section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -52,29 +58,21 @@
     <h1 style="font-size: 50px;">Diseños y Gift Box</h1>
     <h2>Si os interesa un diseño o gift box, mandad mensaje a Instagram</h2>
 
-<div class="row">
- <div class="section">
-   <h2>Sección 1: Tema 1</h2>
-     <p>Texto descriptivo sobre el tema 1.</p>
-        <img src="imagen1.jpg" alt="Descripción de la imagen 1">
-        </div>
-<div class="row">
- <div class="section">
-   <h2>Sección 1: Tema 1</h2>
-     <p>Texto descriptivo sobre el tema 1.</p>
-        <img src="imagen1.jpg" alt="Descripción de la imagen 1">
-        </div>
-<div class="row">
- <div class="section">
-   <h2>Sección 1: Tema 1</h2>
-     <p>Texto descriptivo sobre el tema 1.</p>
-        <img src="imagen1.jpg" alt="Descripción de la imagen 1">
+    <div class="row">
+        <div class="section">
+            <h2>Sección 1: Tema 1</h2>
+            <p>Texto descriptivo sobre el tema 1.</p>
+            <img src="imagen1.jpg" alt="Descripción de la imagen 1">
         </div>
 
+        <!-- ... (secciones adicionales) ... -->
 
+    </div>
 
-   
+    <div class="row">
+        <!-- ... (secciones adicionales) ... -->
+    </div>
 
 </body>
-</html
+</html>
 
