@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crear Entrada</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<form action="/publicar" method="post">
+    <label for="titulo">Título de la Entrada:</label>
+    <input type="text" id="titulo" name="titulo" required>
+    
+    <label for="contenido">Contenido de la Entrada:</label>
+    <textarea id="contenido" name="contenido" rows="8" required></textarea>
+    
+    <label for="tipo-letra">Tipo de Letra:</label>
+    <select id="tipo-letra" name="tipo-letra">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+    
+    <label for="color-texto">Color del Texto:</label>
+    <input type="color" id="color-texto" name="color-texto" value="#000000">
+    
+    <label for="imagen">Agregar Imágenes:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" multiple>
+    
+    <button type="submit">Publicar</button>
+</form>
+
+</body>
+</html>
